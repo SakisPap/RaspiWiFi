@@ -26,6 +26,9 @@ def save_credentials():
     ssid = request.form['ssid']
     wifi_key = request.form['wifi_key']
 
+    print(ssid)
+    print(wifi_key)
+
     create_wpa_supplicant(ssid, wifi_key)
 
     # Call set_ap_client_mode() in a thread otherwise the reboot will prevent
