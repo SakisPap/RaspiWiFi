@@ -10,24 +10,24 @@ padding:0;
 }
 
 body{
-    background-color: #000;
-    margin:0;
+    background-color: #bbbbbb;
+    margin-top:1.5rem;
     color: white;
 }
 
 div#mainContent{
     padding:.3em;
-    background-color: #000;
+    background-color: #FFFFFF;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    font-size: 3.5rem;
-    color: #fff;
+    font-size: 1rem;
+    color: #0F6585;
 }
 
 div#mainContent h1 {
     margin:0 0 .5em 0;
-    font-size:3rem;
+    font-size:2rem;
 }
 
 div#mainContent ul{
@@ -37,7 +37,7 @@ div#mainContent ul{
 }
 
 div#mainContent form {
-    margin-top:-2em;
+    margin-top:-3rem;
 }
 
 label[for=ssid],
@@ -63,50 +63,65 @@ li.wifiNetwork:after {
     content: '▼';
     position: absolute;
     width: 25px;
-    color: #deab04;
+    color: white;
     font-weight: bold;
     font-size: 1.4rem;
     right: 0px;
-    top: 40%;
-    border-radius: 3px;
+    top: 30%;
     pointer-events: none;
     z-index: 2;
 }
 
-select.wifiNetworkInputs {
+.wifiNetworkInputs {
     position: relative;
     width: 100%;
-    background: #111;
-    color: #999;
+    background: #333;
+    color: #0F6585;
     border: none;
     outline: none;
     font-size: 1.5rem;
     padding: 1em;
     margin: 0;
-    border-radius: 3px;
     cursor: pointer;
     height: auto;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+	border-radius: 2rem;
+	column-count:2;
+	column-width: 100px;
+	-webkit-columns: 300px 2;
+    -moz-columns: 300px 2;
+    columns: 300px 2;
+	
 }
+.wifiNetwork:hover .wifiNetworkInputs{
+	display:block;
+
+}
+
+
+
+
 
 .wifiNetworkInputs{
     width: 100%;
     padding:1em;
     font-size: 1.4rem;
-    color: #999;
-    background: #111;
+    color: #0F6585;
+    background: #333;
     border:#999 solid 1px;
+	
 }
 
 .wifiConnectButton{
-    width: 100%;
+    width: 70%;
     margin:2em 0;
     padding:.5em;
-    background-color: #deab04;
+    background-color: #0F6585;
     font-size: 2rem;
     color: #fff;
+	border-radius:5rem;
 }
 
 .manualSSIDEntry{
@@ -122,8 +137,8 @@ div#saveCredentialsOutput{
 }
 
 .saveCredentialsSSID{
-  color: #deab04;
-  font-size: 2em;
+  color: white;
+  font-size: 3em;
 }
 
 /* Wifi Icon
@@ -157,12 +172,12 @@ div#saveCredentialsOutput{
         content: '▼';
         position: absolute;
         width: 50px;
-        color: #deab04;
+        color: #0F6585;
         font-weight: bold;
         font-size: 2rem;
         right: 0px;
         bottom: 50px;
-        border-radius: 3px;
+        border-radius: 5rem;
         pointer-events: none;
         z-index: 2;
     }
