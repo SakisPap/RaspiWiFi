@@ -103,7 +103,7 @@ def set_ap_client_mode():
 
 
 def config_file_hash():
-    # config_file = open('/etc/raspiwifi/raspiwifi.conf')
+    config_file = open('/etc/raspiwifi/raspiwifi.conf')
     config_file = ""
     config_hash = {}
 
