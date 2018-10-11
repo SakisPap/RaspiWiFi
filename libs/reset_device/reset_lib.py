@@ -40,6 +40,15 @@ def is_wifi_active():
 
 	return wifi_active
 
+def is_dongle_active():
+	iwconfig_out = subprocess.check_output(['iwconfig']).decode('utf-8')
+	dongle_active = True
+
+	if not "eth1" in iwconfig_out:
+		dongle_active = False
+
+	return dongle_active
+
 def reset_to_host_mode():
 	os.system('aplay /usr/lib/raspiwifi/reset_device/button_chime.wav')
 	os.system('rm -f /etc/wpa_supplicant/wpa_supplicant.conf')

@@ -17,7 +17,7 @@ else:
 
         # If iwconfig report no association with an AP add 10 to the "No
         # Connection Couter"
-        if reset_lib.is_wifi_active() == False:
+        if not reset_lib.is_wifi_active and not reset_lib.is_dongle_active:
             no_conn_counter += 10
             consecutive_active_reports = 0
         # If iwconfig report association with an AP add 1 to the
