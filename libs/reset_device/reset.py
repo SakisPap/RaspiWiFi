@@ -13,7 +13,7 @@ counter = 0
 #serial_last_four = subprocess.check_output(['cat', '/proc/cpuinfo'])[-5:-1].decode('utf-8')
 serial_last_four = format(get_mac(), 'x')
 config_hash = reset_lib.config_file_hash()
-ssid_prefix = config_hash['ssid_prefix'] + "_"
+ssid_prefix = config_hash['ssid_prefix'] + " "
 hostapd_reset_required = reset_lib.hostapd_reset_check(ssid_prefix)
 
 
