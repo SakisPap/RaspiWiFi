@@ -122,4 +122,4 @@ if __name__ == '__main__':
     # app.run(host = '0.0.0.0', port = int(config_hash['server_port']), ssl_context='adhoc')
     # else:
     # app.run(host = '0.0.0.0', port = int(config_hash['server_port']))
-    app.run(host='0.0.0.0', port=1337)
+    app.run(host='0.0.0.0', port=80)
